@@ -6,4 +6,4 @@ class TestGus(TestCase):
         self.assertTrue(True)
     
     def test_some_other_code(self):
-        self.assertTrue(False)
+        self.assertFalse(False)
