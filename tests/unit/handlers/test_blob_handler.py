@@ -19,6 +19,7 @@ class TestBlobHandler(TestCase):
         self.handler.connection = FakeConnection()
 
     def test_read_by_customer_id(self):
-        data = self.handler.read(1337)
-        self.assertEqual(data.get("customer_id"), 1337)
+        fake_customer_id = 1337
+        data = self.handler.read(fake_customer_id)
+        self.assertEqual(data.get("customer_id"), fake_customer_id)
         self.assertEqual(data.get("name"), "Gus")
