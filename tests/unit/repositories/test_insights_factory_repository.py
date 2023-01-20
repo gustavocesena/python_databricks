@@ -25,4 +25,3 @@ class TestInsightsFactoryRepository(TestCase):
         self.assertEqual(data.get("customer_id"), self.fake_customer_id)
         self.assertEqual(data.get("name"), "Gus")
         self.assertEqual(data.get("last_name"), "Cesena")
-        self.assertFalse(True)
